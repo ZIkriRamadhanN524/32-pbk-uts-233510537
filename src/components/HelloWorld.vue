@@ -12,7 +12,7 @@
       <button @click="filter = 'active'">Belum Selesai</button>
       <button @click="filter = 'completed'">Selesai</button>
     </div>
-
+<!---->
     <ul class="rental-list">
       <li v-for="(rental, index) in filteredRentals" :key="index">
         <input type="checkbox" v-model="rental.completed" />
