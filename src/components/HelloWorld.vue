@@ -6,7 +6,7 @@
       <input v-model="newRental" placeholder="Tambah nama penyewa..." @keyup.enter="addRental" />
       <button @click="addRental">Tambah</button>
     </div>
-<!--  -->
+
     <div class="filter-section">
       <button @click="filter = 'all'">Semua</button>
       <button @click="filter = 'active'">Belum Selesai</button>
