@@ -1,0 +1,180 @@
+/* Style Mewah untuk Aplikasi Rental PS */
+body {
+  background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+  color: #f5f5f5;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 600px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #00ffd5;
+  text-shadow: 0 0 5px #00ffd5;
+}
+
+.input-section {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.input-section button {
+  padding: 12px 20px;
+  margin-left: 10px;
+  background: #00ffd5;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #00333f;
+  transition: background 0.3s ease;
+}
+
+.input-section button:hover {
+  background: #00c9aa;
+}
+
+.filter-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-section button {
+  margin: 0 8px;
+  padding: 10px 15px;
+  background: transparent;
+  border: 2px solid #00ffd5;
+  border-radius: 10px;
+  color: #00ffd5;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.filter-section button:hover {
+  background: #00ffd5;
+  color: #00333f;
+}
+
+.rental-list {
+  list-style: none;
+  padding: 0;
+}
+
+.rental-list li {
+  background: rgba(255, 255, 255, 0.05);
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.rental-list li:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.rental-list input[type="checkbox"] {
+  transform: scale(1.5);
+  margin-right: 12px;
+}
+
+.rental-list span {
+  flex: 1;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.rental-list span.done {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.rental-list button {
+  background: #ff4b5c;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.rental-list button:hover {
+  background: #ff1e35;
+}
+
+/* ===== Efek Neon Tambahan ===== */
+
+/* Efek glow untuk input */
+.input-section input {
+  box-shadow: 0 0 5px #00ffd5, 0 0 20px #00ffd5;
+}
+
+/* Efek glow tombol Tambah */
+.input-section button {
+  box-shadow: 0 0 5px #00ffd5, 0 0 20px #00ffd5;
+}
+.input-section button:hover {
+  box-shadow: 0 0 5px #00ffd5, 0 0 30px #00ffd5;
+}
+
+/* Efek glow filter buttons */
+.filter-section button {
+  box-shadow: 0 0 5px #00ffd5;
+}
+.filter-section button:hover {
+  box-shadow: 0 0 15px #00ffd5, 0 0 25px #00ffd5;
+}
+
+/* Efek glow di setiap item rental */
+.rental-list li {
+  box-shadow: 0 0 5px rgba(0, 255, 213, 0.5);
+  transition: all 0.3s ease;
+}
+.rental-list li:hover {
+  box-shadow: 0 0 15px rgba(0, 255, 213, 0.8);
+}
+
+/* Efek glow tombol Hapus */
+.rental-list button {
+  box-shadow: 0 0 5px #ff4b5c;
+}
+.rental-list button:hover {
+  box-shadow: 0 0 15px #ff1e35;
+}
+
+/* Sedikit animasi muncul */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.app {
+  animation: fadeIn 1s ease-out;
+}
