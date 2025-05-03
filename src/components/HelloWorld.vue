@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <h1>Rental PS - Daftar Penyewaan</h1>
-
+<!---->
     <div class="input-section">
       <input v-model="newRental" placeholder="Tambah nama penyewa..." @keyup.enter="addRental" />
       <button @click="addRental">Tambah</button>
