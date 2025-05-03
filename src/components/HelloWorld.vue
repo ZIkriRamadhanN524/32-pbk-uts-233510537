@@ -51,7 +51,7 @@ const filteredRentals = computed(() => {
   }
 });
 </script>
-
+<!---->
 <style scoped>
 .app {
   max-width: 500px;
